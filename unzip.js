@@ -15,4 +15,4 @@ function unzip(file, path) {
     })
 }
 
-module.exports = { unzip }
+module.exports = unzip
