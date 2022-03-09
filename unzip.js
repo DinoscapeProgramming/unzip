@@ -1,8 +1,8 @@
 const fs = require('fs');
-const unzipper = require('adm-zip');
+const Unzip = require('adm-zip');
 
 function unzip(file, path) {
-    const zip = new unzipper(file)
+    const zip = new Unzip(file)
     zip.getEntries().forEach(entry => {
         let filePath = path || "./"
         if (!filePath.startsWith("./")) {
